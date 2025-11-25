@@ -1,0 +1,44 @@
+{
+  "name": "search_company_url",
+  "version": "1.0.0",
+  "description": "CLI utility to identify the best matching company website using Google Custom Search and Gemini scoring.",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "tsx src/index.ts",
+    "dev": "LOG_LEVEL=debug tsx src/index.ts",
+    "lint": "eslint \"src/**/*.ts\" \"tests/**/*.ts\"",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "google",
+    "gemini",
+    "search",
+    "company",
+    "cli"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@googleapis/customsearch": "^4.0.0",
+    "@google/genai": "^0.3.0",
+    "axios": "^1.6.7",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "ts-node": "^10.9.2",
+    "tslib": "^2.6.2",
+    "tsconfig-paths": "^4.2.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.4.0"
+  }
+}
